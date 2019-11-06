@@ -11,11 +11,9 @@ const TaskList = (props) => {
           markCompleted={props.markCompleted} 
           deleteTask={props.deleteTask}
           editTask={props.editTask}
-          addTask={props.addTask}
           editChangeHandler={props.editChangeHandler}
           editedTask={props.editedTask}
           addEditedTask={props.addEditedTask}
-          newTask={props.newTask}
         />
       })}
     </div>

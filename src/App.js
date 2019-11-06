@@ -54,7 +54,8 @@ function App() {
         />
         <button type='submit'>Add Task</button>
       </form>
-      <button onClick={() => clearCompleted()}>Clear completed</button>
+      {state.length > 0 ? <button onClick={() => clearCompleted()}>Clear completed</button> : null}
+      
       <TaskList 
         tasks={state} 
         markCompleted={markCompleted} 
